@@ -1,12 +1,13 @@
 import Config
+import_config ".env.exs"
 
 # Configure your database
 config :world_heritage_explorer, WorldHeritageExplorer.Repo,
-  username: "postgres",
-  password: "postgres",
-  hostname: "localhost",
-  database: "world_heritage_explorer_dev",
-  stacktrace: true,
+  username: System.get_env("DB_USER"),
+  password: System.get_env("DB_PASS"),
+  database: System.get_env("DB_NAME") ,
+  hostname: System.get_env("DB_HOST"),
+  port: System.get_env("DB_PORT") |> String.to_integer(),
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 

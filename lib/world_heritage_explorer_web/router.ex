@@ -17,7 +17,7 @@ defmodule WorldHeritageExplorerWeb.Router do
   scope "/", WorldHeritageExplorerWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", WelcomeLive
   end
 
   # Other scopes may use custom stacks.

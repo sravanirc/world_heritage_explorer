@@ -35,3 +35,5 @@ world_heritage_explorer-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Ignore the .env file, which is used to store environment variables.
+.env
