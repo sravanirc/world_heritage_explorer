@@ -39,10 +39,4 @@ defmodule WorldHeritageExplorer.WorldHeritageSite do
     end
   end
 
-  # def get_world_heritage_sites_by_country(country) do
-  #   from(w in WorldHeritageExplorer.WorldHeritageSite,
-  #     where: w.name_en == ^country
-  #   )
-  #   |> WorldHeritageExplorer.Repo.all()
-  # end
 end

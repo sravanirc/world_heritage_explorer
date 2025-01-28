@@ -114,14 +114,15 @@ defmodule WorldHeritageExplorerWeb.WelcomeLive do
   def render(assigns) do
     ~H"""
     <h1 class=" flex justify-center">World Heritage Explorer</h1>
-
+    <div class="flex justify-center items-center flex-col">
     <h2>Welcome to the World Heritage Explorer!</h2>
     <p>
-     Discover and explore UNESCO World Heritage Sites with ease. Search by region, adjust rows per page, and view detailed site information such as descriptions, locations, and categories.
+     Discover and explore World Heritage Sites with ease. Search by region, adjust rows per page, and view detailed site information such as descriptions, locations, and categories.
     </p>
     <p>
     Enjoy seamless navigation with live updates and intuitive pagination. Start exploring the world's cultural and natural treasures today!
     </p>
+    </div>
     <div class="p-5 grid justify-center rounded-lg overflow-auto">
       <div class="flex justify-between items-center p-3 w-full">
         <.live_component
