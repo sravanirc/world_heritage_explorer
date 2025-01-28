@@ -5,7 +5,7 @@ import_config ".env.exs"
 config :world_heritage_explorer, WorldHeritageExplorer.Repo,
   username: System.get_env("DB_USER"),
   password: System.get_env("DB_PASS"),
-  database: System.get_env("DB_NAME") ,
+  database: System.get_env("DB_NAME"),
   hostname: System.get_env("DB_HOST"),
   port: System.get_env("DB_PORT") |> String.to_integer(),
   show_sensitive_data_on_connection_error: true,

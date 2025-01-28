@@ -16,7 +16,6 @@ defmodule WorldHeritageExplorerWeb.Router do
 
   scope "/", WorldHeritageExplorerWeb do
     pipe_through :browser
-
     live "/", WelcomeLive
   end
 

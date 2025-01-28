@@ -3,3 +3,54 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+main {
+
+    background-color: #e6ecf3;
+}
+
+h1 {
+    font-size: 4rem;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    color: #2A363F;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2rem;
+}
+
+.pagination-list {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #64748b;
+    /* This is the slate-500 color */
+    border-radius: 0.25rem;
+    background-color: #22c55e;
+}
+
+.pagination-list li {
+    padding: 1px 5px;
+    border-right: 1px solid #64748b;
+}
+
+.pagination-list li:hover,
+.onhover {
+    color: white;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.small-text th {
+    font-size: 15px;
+}

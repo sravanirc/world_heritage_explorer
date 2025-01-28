@@ -10,7 +10,8 @@ defmodule WorldHeritageExplorer.Application do
     children = [
       WorldHeritageExplorerWeb.Telemetry,
       WorldHeritageExplorer.Repo,
-      {DNSCluster, query: Application.get_env(:world_heritage_explorer, :dns_cluster_query) || :ignore},
+      {DNSCluster,
+       query: Application.get_env(:world_heritage_explorer, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: WorldHeritageExplorer.PubSub},
       # Start the Finch HTTP client for sending emails
       {Finch, name: WorldHeritageExplorer.Finch},
